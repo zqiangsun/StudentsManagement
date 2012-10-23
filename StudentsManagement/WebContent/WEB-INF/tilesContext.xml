@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//ApacheSoftwareFoundation//DTDTilesConfiguration2.1//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition name="template" template="/WEB-INF/views/tiles/main_template.jsp" />
+	<definition name="user/index" extends="template">
+		<put-attribute name="content" value="/WEB-INF/views/user/index.jsp" />
+	</definition>
+	<definition name="user/editNew" extends="template">
+		<put-attribute name="content" value="/WEB-INF/views/user/editNew.jsp" />
+	</definition>
+	<definition name="user/edit" extends="template">
+		<put-attribute name="content" value="/WEB-INF/views/user/edit.jsp" />
+	</definition>
+	<definition name="user/show" extends="template">
+		<put-attribute name="content" value="/WEB-INF/views/user/show.jsp" />
+	</definition>
+	<definition name="user/confirm" extends="template">
+		<put-attribute name="content" value="/WEB-INF/views/user/confirm.jsp" />
+	</definition>
+	<definition name="pageDirect/index" extends="template">
+		<put-attribute name="content"
+			value="/WEB-INF/views/pageDirect/index.jsp" />
+	</definition>
+	<definition name="pageDirect/editNew" extends="template">
+		<put-attribute name="content"
+			value="/WEB-INF/views/pageDirect/editNew.jsp" />
+	</definition>
+	
+	<definition name="session/index" extends="template">
+		<put-attribute name="content" value="/WEB-INF/views/session/index.jsp"/>
+	</definition>
+	
+	<definition name="session/editNew" template="/WEB-INF/views/session/editNew.jsp" />
+</tiles-definitions>
