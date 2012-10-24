@@ -19,6 +19,18 @@
 	<definition name="user/confirm" extends="template">
 		<put-attribute name="content" value="/WEB-INF/views/user/confirm.jsp" />
 	</definition>
+	<definition name="major/index" extends="template">
+		<put-attribute name="content" value="/WEB-INF/views/major/index.jsp" />
+	</definition>
+	<definition name="major/editNew" extends="template">
+		<put-attribute name="content" value="/WEB-INF/views/major/editNew.jsp" />
+	</definition>
+	<definition name="major/edit" extends="template">
+		<put-attribute name="content" value="/WEB-INF/views/major/edit.jsp" />
+	</definition>
+	<definition name="major/show" extends="template">
+		<put-attribute name="content" value="/WEB-INF/views/major/show.jsp"/>
+	</definition>
 	<definition name="pageDirect/index" extends="template">
 		<put-attribute name="content"
 			value="/WEB-INF/views/pageDirect/index.jsp" />
@@ -27,10 +39,10 @@
 		<put-attribute name="content"
 			value="/WEB-INF/views/pageDirect/editNew.jsp" />
 	</definition>
-	
+
 	<definition name="session/index" extends="template">
-		<put-attribute name="content" value="/WEB-INF/views/session/index.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/views/session/index.jsp" />
 	</definition>
-	
+
 	<definition name="session/editNew" template="/WEB-INF/views/session/editNew.jsp" />
 </tiles-definitions>

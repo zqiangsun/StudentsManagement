@@ -11,7 +11,7 @@ import mirrors.intel.type.Sex;
 
 @Entity
 public class Student extends User {
-	Long id;
+	Long serialIndex;
 	@OneToOne
 	@JoinColumn
 	Nation nation;
@@ -26,5 +26,7 @@ public class Student extends User {
 	Long phone;
 	@Lob
 	Byte[] photo;
-	
+	@ManyToOne
+	@JoinColumn
+	Major major;
 }

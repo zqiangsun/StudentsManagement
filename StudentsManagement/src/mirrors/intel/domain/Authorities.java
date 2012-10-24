@@ -14,7 +14,7 @@ import mirrors.intel.type.Authority;
 public class Authorities implements Serializable {
 	@Id
 	@OneToOne
-	@JoinColumn(name="username")
+	@JoinColumn(name="username",referencedColumnName="username")
 	User user;
 	@Enumerated(EnumType.STRING)
 	Authority authority;
